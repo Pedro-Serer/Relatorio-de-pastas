@@ -1,0 +1,49 @@
+*{margin: 0px; padding: 0px;}
+
+.titulo{
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.apresentacao{
+  font-family: 'Russo One', sans-serif;
+}
+
+.c{
+  margin: 40px;
+}
+
+.pasta,
+.arquivo {
+  background-color: white;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+.pasta:hover {
+    background-color: #f1f1f1;
+}
+
+.arquivo:hover {
+    background-color: #f1f1f1;
+}
+
+.elementos{
+  background-color: #f1f1f1;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 70%;
+  height: 300px;
+}
+
+footer{
+  position: relative;
+  top: 400px;
+  width: 100%;
+}
+
+@media (min-width: 700px){
+  .texto{
+    width: 50%;
+  }
+}

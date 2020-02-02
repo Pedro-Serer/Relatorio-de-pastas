@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<title> Mostrar pastas e subpastas </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Russo+One" rel="stylesheet">
+<body>
+	<header class="w3-container w3-black"><h1 class="titulo"> Relatório de pastas </h1></header>
+
+	<center class="w3-container c">
+		<div id="right-form">
+			<form>
+				<h1 class="apresentacao"> Pesquisar por diretório </h1>
+				<input id="diretorio" class="w3-input w3-border texto w3-margin-bottom" type="text" required>
+			</form>
+			<button onclick="pesquisar()" class="w3-button w3-blue" type="button">Pesquisar</button>
+			<a href="view/relatorio.php" target="_blank"><button onclick="gerar()" class="w3-button w3-blue"> Relatório PDF </button></a>
+		</div>
+	</center>
+
+	<footer class="w3-padding-16 w3-black">
+		<p>Feito por <a href="https://pedrosererti.000webhostapp.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">Pedro Serer TI</a></p>
+	</footer>
+
+	<center>
+		<div class="elementos">
+			<table class="w3-table">
+				<tbody id="retorno">
+				</tbody>
+			</table>
+		</div>
+	</center>
+
+	<br>
+	<p id="number">Mostrando 0 arquivos</p>
+
+	<script src="js/index.js"></script>
+	</body>
+</html>
